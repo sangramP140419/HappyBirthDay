@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@500&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 4.8rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    z-index: 999;
+}
+
+.header .logo {
+    font-size: 1.8em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 0 0;
+    color: rgb(77, 105, 96);
+}
+
+.header .logo b {
+    color: rgb(157, 112, 57);
+}
+
+.nav-list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar-links:link,
+.navbar-links:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    color: rgb(12, 89, 15);
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.navbar-links:hover,
+.navbar-links:active {
+    color: rgb(195, 18, 47);
+}
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    width: 3rem;
+    height: 3rem;
+    color: rgb(12, 89, 15);
+}
+
+.mobile-nav-icon[name="close"] {
+    display: none;
+}
+
+
+/* Sections */
+.text-1 {
+    font-family: 'Berkshire Swash';
+    text-transform: uppercase;
+    line-height: 1em;
+    position: fixed;
+    top: 52%;
+    transform: translateY(-50%) rotateZ(-80deg);
+    left: 20px;
+    font-size: 7em;
+    letter-spacing: 5px;
+    color: black;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.text-2 {
+    font-family: 'Berkshire Swash';
+    text-transform: uppercase;
+    line-height: 1em;
+    position: fixed;
+    top: 52%;
+    transform: translateY(-50%) rotateZ(-80deg);
+    left: 40px;
+    font-size: 7em;
+    letter-spacing: 5px;
+    color: black;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.text-3 {
+    font-family: 'Berkshire Swash';
+    text-transform: uppercase;
+    line-height: 1em;
+    position: fixed;
+    top: 52%;
+    transform: translateY(-50%) rotateZ(-80deg);
+    right: 80px;
+    font-size: 6.5em;
+    letter-spacing: 5px;
+    color: black;
+    opacity: 0.1;
+    z-index: 1;
+    visibility: visible;
+}
+
+.text-4 {
+    font-family: 'Berkshire Swash';
+    text-transform: uppercase;
+    line-height: 1em;
+    position: fixed;
+    top: 52%;
+    transform: translateY(-50%) rotateZ(-80deg);
+    right: -160px;
+    font-size: 6.5em;
+    letter-spacing: 5px;
+    color: black;
+    opacity: 0.1;
+    z-index: 1;
+    visibility: visible;
+}
+
+/* Home Section */
+.home-section {
+    padding: 9.6em 0;
+    background: url(/img/bg.jpg);
+    /* background-image: url(/img/bg.jpg); */
+    background-size: cover;
+    height: 112vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section .content {
+    position: relative;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper {
+    width: 350px;
+    height: 500px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    visibility: visible;
+    border-radius: 10px;
+}
+.swiper-slide img:hover{
+    width: 360px;
+    height: 520px;
+    transition: all 0.3s;
+}
+.home-section .content .heading {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: #097c70;
+
+}
+
+.home-section .content p {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: #252222;
+    padding: 10px;
+}
+
+.home-section .content p b {
+    color: #68083a;
+    font-weight: 600;
+}
+
+.wish-text {
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 400;
+    font-family: 'Berkshire Swash';
+    color: #68083a;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 9.6em 0;
+    background: linear-gradient(to bottom, #ffcccc 0%, #ff99cc 91%);
+    width: 100%;
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+
+}
+
+.about-heading {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px 2%;
+    margin-top: 10px;
+}
+
+.about-section .about-container .card {
+    flex-basis: 24%;
+    width: 100%;
+    height: 320px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 0 5px 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
+}
+
+.about-section .about-container .card:hover {
+    height: 470px;
+}
+
+.about-section .about-container .card .img-box img {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.about-section .about-container .card:hover .img-box img {
+    margin-top: 10px;
+}
+
+.about-section .about-container .card .card-content {
+    display: none;
+    transition: all 0.5s;
+    padding: 0 4px;
+}
+
+.about-section .about-container .card:hover .card-content {
+    display: block;
+}
+
+.card .card-content .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #009688;
+    padding: 10px;
+    text-align: center;
+}
+
+.card .card-content .desc {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #0d0c0c;
+}
+
+
+/* Gallery Section */
+
+.gallery-section {
+    padding: 9.6em 0;
+    background: linear-gradient(to bottom, #ff99cc 0%, #000066 91%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery h1 {
+    top: -90px;
+    text-decoration: underline;
+}
+
+.box {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    transform-style: preserve-3d;
+    animation: animate 22s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1500px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1500px) rotateY(360deg);
+    }
+}
+
+.box div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--v) * 45deg)) translateZ(300px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box div img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.spin {
+    animation: spin 1.4s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: perspective(1500px) rotateY(0deg);
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+        transform: perspective(1500px) rotateY(360deg);
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+    }
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 62em) {
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        border: 3px solid rgb(12, 89, 15);
+        color: rgb(12, 89, 15);
+    }
+
+    .header {
+        position: fixed;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .header .logo {
+        font-size: 1.2em;
+        letter-spacing: 3px;
+
+    }
+
+    .navbar {
+        /* display: none; */
+        width: 25%;
+        height: 20vh;
+        background: transparent;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
+        position: absolute;
+        top: 60px;
+        right: 0;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
+        display: none;
+    }
+
+    .home-section {
+        padding: 2em;
+        align-items: flex-start;
+        background-color: #ffcccc;
+        background-image: none;
+    }
+
+    .home-section .home {
+        margin-top: 0px;
+    }
+    .swiper {
+        width: 300px;
+        height: 450px;
+        margin-top: 50px;
+    }
+    .swiper-slide img {
+        width: 300px;
+        height: 450px;
+    }
+    .swiper-slide img:hover{
+        width: 305px;
+        height: 460px;
+    }
+    .text-1 {
+        transform: translateY(-50%) rotateZ(-90deg);
+        left: -100px;
+        top: 40%;
+    }
+
+    .text-2 {
+        transform: translateY(-50%) rotateZ(-90deg);
+        right: -272px;
+        top: 30%;
+    }
+
+    .about-section {
+        height: 360vh;
+    }
+
+    .text-3,
+    .text-4 {
+        visibility: hidden;
+    }
+    .gallery-section {
+        height: 70vh;
+    }
+}
